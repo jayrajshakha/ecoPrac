@@ -3,7 +3,7 @@ import useProducts from "../hooks/UseProducts";
 
 const Home = () => {
   const [data, loading, error] = useProducts();
-  console.log(data, loading, error);
+
 
   const filteredClothes =
     data !== null &&
@@ -13,7 +13,7 @@ const Home = () => {
         item.category === "women's clothing"
       );
     });
-    console.log(filteredClothes);
+  
 
   return (
     <div>
