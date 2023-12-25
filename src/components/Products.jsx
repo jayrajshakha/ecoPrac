@@ -1,14 +1,16 @@
 import { BsPlus } from "react-icons/bs";
 import { BsEyeFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import useCart from "../hooks/UseCart";
 
 // eslint-disable-next-line react/prop-types
 const Products = ({ productsDetails }) => {
-  console.log(productsDetails);
 
   // eslint-disable-next-line react/prop-types
   const { id, title, description, price, category, image, rating } =
     productsDetails;
+
+    const {addCarts} = useCart()
 
   return (
     <div>
@@ -24,7 +26,7 @@ const Products = ({ productsDetails }) => {
           </div>
           {/* Button*/}
           <div className="absolute top-4 -right-11 group-hover:right-4  p-2 flex flex-col justify-center items-center gap-y-2 opacity-0 group-hover:opacity-100 transition-all duration-300">
-            <button>
+            <button onClick={() => addCarts(productsDetails, id)}>
               <div className="flex justify-center items-center bg-red-500 text-white h-12 w-12 ">
                 <BsPlus className="text-3xl" />
               </div>
