@@ -6,8 +6,7 @@ import useCart from "../hooks/UseCart";
 // eslint-disable-next-line react/prop-types
 const Products = ({ productsDetails }) => {
   // eslint-disable-next-line react/prop-types
-  const { id, title, description, price, category, image, rating } =
-    productsDetails;
+  const { id, title, price, category, images } = productsDetails;
 
   const { addCarts } = useCart();
 
@@ -19,7 +18,11 @@ const Products = ({ productsDetails }) => {
           <div className="w-[200px] flex justify-center items-center mx-auto">
             <img
               className="max-h-[160px] group-hover:scale-110 transition duration-300"
-              src={image}
+              src={
+                !images[1]
+                  ? "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9nnnGOgNY-TlLlrN_UsOTllJDWbjflnGIHg&usqp=CAU"
+                  : images[1]
+              }
               alt={title}
             />
           </div>
@@ -41,11 +44,13 @@ const Products = ({ productsDetails }) => {
       </div>
       {/* catagory and title */}
       <div>
-        <div className="text-sm mb-1 capitalize text-gray-500">{category}</div>
+        <div className="text-sm mb-1 capitalize text-gray-500">
+          {category.name}
+        </div>
         <Link to={`/products/${id}`}>
           <h2 className="font-semibold mb-1">{title}</h2>
         </Link>
-        <div className="font-semibold ">$ {price}</div>
+        <div className="font-semibold ">${price}</div>
       </div>
     </div>
   );

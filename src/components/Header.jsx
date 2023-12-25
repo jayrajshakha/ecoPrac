@@ -2,7 +2,7 @@ import { BsBag } from "react-icons/bs";
 import useSidebar from "../hooks/UseSidebar";
 import useCart from "../hooks/UseCart";
 import { Link } from "react-router-dom";
-import logo from "../img/logo.svg";
+import logo from "../../public/img/logo.svg";
 import { useEffect, useState } from "react";
 
 const Header = () => {

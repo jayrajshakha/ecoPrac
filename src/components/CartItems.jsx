@@ -5,7 +5,7 @@ import { IoMdAdd } from "react-icons/io";
 import useCart from "../hooks/UseCart";
 
 const CartItems = ({ item }) => {
-  const { amount, id, title, price, image } = item;
+  const { amount, id, title, price, images } = item;
   const { removeCarts, increaseItem, deacreaseItem } = useCart();
 
   return (
@@ -13,7 +13,7 @@ const CartItems = ({ item }) => {
       <div className="flex items-center w-full min-h-[150px] gap-x-4">
         {/* image */}
         <Link to={`/products/${id}`}>
-          <img className="max-w-[50px]" src={image} alt="" />
+          <img className="max-w-[50px]" src={images[0]} alt="" />
         </Link>
         <div className="flex flex-col w-full">
           {/* title and remove Icons */}

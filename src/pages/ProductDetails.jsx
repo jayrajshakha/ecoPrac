@@ -21,7 +21,7 @@ const ProductDetails = () => {
         <div className="flex flex-col md:flex-row items-center">
           <div className="flex justify-center items-center flex-1 mb-8 lg:mb-0">
             <img
-              src={product[0].image}
+              src={product[0].images[0]}
               className="max-w-[200px] md:max-w-[200px] lg:max-w-[300px]"
               alt=""
             />

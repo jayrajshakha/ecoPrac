@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import women from "../img/woman_hero.png";
+import women from "../../public/img/woman_hero.png";
 
 const Hero = () => {
   return (
