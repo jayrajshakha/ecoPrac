@@ -13,10 +13,16 @@
   body {
     @apply custom-scrollbar
   }
+
 }
 
 
 @layer utilities {
+
+  
+  .herro{
+    background-image: url('../../public//img//bg_hero.svg');
+}
 
 
   .custom-scrollbar::-webkit-scrollbar {

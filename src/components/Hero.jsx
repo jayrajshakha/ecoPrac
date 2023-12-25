@@ -3,7 +3,7 @@ import women from "../../public/img/woman_hero.png";
 
 const Hero = () => {
   return (
-    <section className=" h-[800px] bg-hero bg-no-repeat bg-cover py-24 bg-center">
+    <section className=" h-[800px] herro bg-no-repeat bg-cover py-24 bg-center">
       <div className="container mx-auto flex justify-around h-full">
         <div className="flex flex-col  justify-center">
           <div className="flex items-center uppercase font-bold ">
@@ -17,8 +17,8 @@ const Hero = () => {
             className="uppercase self-start font-semibold border-b border-primary"
             to={"/"}
           >
-            discover more
           </Link>
+            discover more
         </div>
         <div className="hidden lg:block">
           <img src={women} alt="" />
