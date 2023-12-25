@@ -4,32 +4,26 @@ export const CartContext = createContext();
 
 const CartContextProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
-  const [totalAmount, setTotalAmount] = useState(0)
-  const [total, setTotal] = useState(0)
+  const [totalAmount, setTotalAmount] = useState(0);
+  const [total, setTotal] = useState(0);
 
-  // total 
+  // total
 
   useEffect(() => {
-
     const totalPrice = cart?.reduce((a, b) => {
-       return   a + b.price * b.amount
-    },0)
-   setTotal(totalPrice)
+      return a + b.price * b.amount;
+    }, 0);
+    setTotal(totalPrice);
+  });
 
-
-
-  })
-
-  // addAmount 
+  // addAmount
 
   useEffect(() => {
-    if(cart) {
-       const a = cart.length
-       setTotalAmount(a);
+    if (cart) {
+      const a = cart.length;
+      setTotalAmount(a);
     }
-      
-
-  },[cart])
+  }, [cart]);
 
   // Add Carts
 
@@ -91,7 +85,7 @@ const CartContextProvider = ({ children }) => {
         increaseItem,
         deacreaseItem,
         totalAmount,
-        total
+        total,
       }}
     >
       {children}

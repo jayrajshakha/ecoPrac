@@ -5,12 +5,11 @@ import useCart from "../hooks/UseCart";
 
 // eslint-disable-next-line react/prop-types
 const Products = ({ productsDetails }) => {
-
   // eslint-disable-next-line react/prop-types
   const { id, title, description, price, category, image, rating } =
     productsDetails;
 
-    const {addCarts} = useCart()
+  const { addCarts } = useCart();
 
   return (
     <div>

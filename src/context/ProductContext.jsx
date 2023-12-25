@@ -3,7 +3,7 @@ import { createContext, useEffect, useState } from "react";
 export const ProductContext = createContext();
 
 // eslint-disable-next-line react/prop-types
- const ProductProvider = ({ children }) => {
+const ProductProvider = ({ children }) => {
   // Products State
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
