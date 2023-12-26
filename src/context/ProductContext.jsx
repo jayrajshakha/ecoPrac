@@ -17,7 +17,7 @@ const ProductProvider = ({ children }) => {
     setLoading(true);
 
     const fetchApi = async () => {
-      const res = await fetch("https://api.escuelajs.co/api/v1/products");
+      const res = await fetch("https://dummyjson.com/products");
       const results = await res.json();
 
       try {

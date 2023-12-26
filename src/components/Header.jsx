@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 
 const Header = () => {
   const { isOpen, setIsOpen } = useSidebar();
-  const { totalAmount, setTotalAmount } = useCart();
+  const { totalAmount } = useCart();
 
   const [isActive, setIsActive] = useState(false);
 
@@ -21,7 +21,7 @@ const Header = () => {
     <header
       className={` ${
         isActive ? "bg-white py-4 shadow-md" : "bg-none py-6"
-      } z-10 w-full fixed transition-all `}
+      } z-10 w-full fixed transition-all sc `}
     >
       <div className="flex justify-between items-center mx-auto h-full container">
         <Link to={"/"}>

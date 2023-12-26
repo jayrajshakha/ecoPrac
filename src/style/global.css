@@ -14,15 +14,28 @@
     @apply custom-scrollbar
   }
 
+
 }
 
 
 @layer utilities {
 
-  
-  .herro{
-    background-image: url('../../public//img//bg_hero.svg');
-}
+
+  .herro {
+    background-image: url('https://images.unsplash.com/photo-1596024066862-7fddc2780646?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fHw%3D');
+    background-size: cover;
+  }
+
+  .imgg{
+     background-image: url('../../public//img//bg_hero.svg');
+  }
+  .family {
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .test {
+    background-image: url('https://images.unsplash.com/photo-1472289065668-ce650ac443d2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZnVsbCUyMGhkJTIwYmFubmVyfGVufDB8fDB8fHww');
+    background-size: cover;
+  }
 
 
   .custom-scrollbar::-webkit-scrollbar {

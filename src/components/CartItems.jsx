@@ -13,7 +13,7 @@ const CartItems = ({ item }) => {
       <div className="flex items-center w-full min-h-[150px] gap-x-4">
         {/* image */}
         <Link to={`/products/${id}`}>
-          <img className="max-w-[50px]" src={images[0]} alt="" />
+          <img className="max-w-[50px] hover:scale-110 duration-500" src={images[0]} alt="" />
         </Link>
         <div className="flex flex-col w-full">
           {/* title and remove Icons */}

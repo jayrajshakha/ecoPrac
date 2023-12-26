@@ -7,11 +7,11 @@ const ProductDetails = () => {
   const [data] = useProducts();
   const { addCarts } = useCart();
 
-  const product = data?.filter((f) => {
+  const product = data?.products.filter((f) => {
     return f.id === parseInt(id);
   });
 
-  if (!product) {
+  if (!data) {
     return <h1 className="text-center text-xl font-semibold">loading...</h1>;
   }
 
@@ -22,7 +22,7 @@ const ProductDetails = () => {
           <div className="flex justify-center items-center flex-1 mb-8 lg:mb-0">
             <img
               src={product[0].images[0]}
-              className="max-w-[200px] md:max-w-[200px] lg:max-w-[300px]"
+              className="max-w-[200px] md:max-w-[200px] lg:max-w-[300px] hover:scale-125 duration-500"
               alt=""
             />
           </div>

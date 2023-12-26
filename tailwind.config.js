@@ -22,7 +22,7 @@ module.exports = {
         secondary: '#F5E6E0',
       },
       backgroundImage: {
-        hero: "url('./public/img/bg_hero.svg')",
+        hero: "url('https://png.pngtree.com/thumb_back/fw800/background/20230722/pngtree-high-tech-gadgets-on-stylish-blue-shelf-perfect-for-a-modern-image_3770247.jpg')",
       },
     },
   },
