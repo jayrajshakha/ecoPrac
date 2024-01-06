@@ -32,9 +32,14 @@ const Header = () => {
 
         <div
           className="cursor-pointer flex relative"
-          onClick={() => setIsOpen(!isOpen)}
+          
         >
-          <BsBag className="text-2xl" />
+          <ul className="flex justify-around gap-x-3 px-2 mx-3">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#product">Product</a></li>
+           
+          </ul>
+          <BsBag onClick={() => setIsOpen(!isOpen)} className="text-2xl" />
           <div className="bg-red-500 absolute -right-2 -bottom-2 h-[18px] w-[18px] flex justify-center items-center text-[12px] text-white rounded-full ">
             {totalAmount}
           </div>

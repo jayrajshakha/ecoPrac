@@ -13,7 +13,7 @@ const Products = ({ productsDetails }) => {
 
   return (
     <div>
-      <div className="h-[300px] border border-[#e4e4e4] overflow-hidden mb-4 relative group transition">
+      <div  id="product" className="h-[300px] border border-[#e4e4e4] overflow-hidden mb-4 relative group transition">
         <div className="w-full h-full flex justify-center items-center">
           {/* Image */}
           <div className="w-[200px] flex justify-center items-center mx-auto">

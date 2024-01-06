@@ -16,7 +16,7 @@ const ProductDetails = () => {
   }
 
   return (
-    <section className="pt-32 pb-12  lg:py-32 flex items-center  md:h-screen">
+    <section  className="pt-32 pb-12  lg:py-32 flex items-center  md:h-screen">
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row items-center">
           <div className="flex justify-center items-center flex-1 mb-8 lg:mb-0">

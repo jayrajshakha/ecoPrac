@@ -3,7 +3,7 @@ import women from "../../public/img/woman_hero.png";
 
 const Hero = () => {
   return (
-    <section className=" h-[800px] imgg bg-no-repeat bg-cover py-24 bg-center">
+    <section  id="home" className=" h-[800px] imgg bg-no-repeat bg-cover py-24 bg-center">
       <div className="container mx-auto flex justify-around h-full">
         <div className="flex flex-col  justify-center">
           <div className="flex items-center uppercase font-bold ">
